@@ -36,7 +36,7 @@ public class Ejercicio12 {
              n4=lector.nextInt();
              //notas=lector.nextInt();
              def=(n1*0.25)+(n2*0.3)+(n3*0.2)+(n4*0.25);
-             //definitiva[i]=n1;
+             definitiva[i]=n1;
              acum=acum+def;
              if(def>=3){
             
@@ -47,7 +47,7 @@ public class Ejercicio12 {
            } 
            System.out.println(" las notas son:");
     for (i=1;i<=n;i++){
-   //     System.out.println(definitiva[i] + " ");
+      System.out.println(definitiva[i] + " ");
     }
     System.out.println(" el promedio acumulado es: " + acum/n);
     System.out.println(" el procentaje de perdedores es " + (cont/n)*100);
