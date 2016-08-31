@@ -17,37 +17,31 @@ public class Ejercicio8 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         int n1, dig1,n2,dig2=0,N2, dig,may=0,men=0;
+         int n1, dig1,n2,dig2=0, dig,may=0,men=0;
          double sum, resta,mul, div,divi,divisi,raiz;
         System.out.println("digite el primer numero de dos cifras: ");
-        Scanner lectorn1=new Scanner(System.in);
-        n1 = lectorn1.nextInt();
+        Scanner lector=new Scanner(System.in);
+        n1 = lector.nextInt();
         if(n1>9 && n1<=99){
             dig2=n1%10;
             dig=n1-dig2;
             dig1=dig/10;
-            System.out.println("dig2" + dig2);
+            System.out.println("dig2  " + dig2);
         }
         else{
          System.out.println("ERROR ");
          System.out.println("digite un numero de dos cifras ");    
         }
         System.out.println("digite el segundo numero de dos cifras: ");
-        Scanner lectorn2=new Scanner(System.in);
-        n2 = lectorn2.nextInt();
-        N2=0;
+        
+        n2 = lector.nextInt();
         if(n2>9 && n2<=99){
         }
         else{
          System.out.println("ERROR ");
          System.out.println("digite un numero de dos cifras ");   
         }
-        if (n1>n2){
-            n1=may;
-        }
-        else{
-            n2=men;
-        }
+       
         sum=n1+n2;
         resta=n1-n2;
         mul=n1*n2;
@@ -55,10 +49,22 @@ public class Ejercicio8 {
         raiz=Math.sqrt(n1);
         switch(dig2){
             case 0:
-               System.out.println("El numero mayor es: " + may);
+                 if (n1>n2){
+                  System.out.println("El numero mayor es: " + n1);
+                  }
+                else{
+                  System.out.println("El numero mayor es: " + n2);
+                 }
+              
                 break; 
             case 1: 
-                System.out.println("El numero menor es: " + men);
+                 if (n1<n2){
+                  System.out.println("El numero menor es: " + n1);
+                  }
+                else{
+                 System.out.println("El numero menor es: " + n2);
+                 }
+                
                 break;
             case 2:
                  System.out.println("la suma es: " + sum);

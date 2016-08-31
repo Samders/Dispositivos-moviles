@@ -14,10 +14,46 @@ import javax.swing.JOptionPane;
  */
 public class Personal_Date {
     private String nombre,apellidos,edad, cedula, fecha, direccion, tele;
-     //int edad;
+       
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+
+
+    public void setTele(String tele) {
+        this.tele = tele;
+    }
+
+   
     public void Loading_data(){
-        Client arrayObjetos[]=new Client[1];
-		for (int i=0;i<arrayObjetos.length;i++){
+		
 			//Indicamos cada uno de los parametros del objeto
                         Scanner lector=new Scanner(System.in);
                         System.out.println(" escribe un nombre: ");
@@ -35,85 +71,20 @@ public class Personal_Date {
                         System.out.println(" escribe un telefono ");
                         tele = lector.next();
 			
-			
-			arrayObjetos[i]=new Client (nombre, apellidos,edad, cedula,fecha,direccion,tele);
 		}
 
-    }
-    public void Show_data(){
-        Client arrayObjetos[]=new Client[10];
-        for (int i=0;i<arrayObjetos.length;i++) {
-            System.out.println(" los datos del cliente son: ");
-            System.out.println(arrayObjetos[i]);
-        }
-    }
-
-  /*  public Personal_Date(String nombre, String apellidos, String edad, String cedula, String fecha, String direccion, String tele) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.edad = edad;
-        this.cedula = cedula;
-        this.fecha = fecha;
-        this.direccion = direccion;
-        this.tele = tele;
-    }*/
-
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getTel() {
-        return tele;
-    }
-
-    public void setTel(String tel) {
-        this.tele = tel;
-    }
-
-    public String getEdad() {
-        return edad;
-    }
-
-    public void setEdad(String edad) {
-        this.edad = edad;
-    }
     
+    public void Show_data(){
+        
+        
+            System.out.println(" los datos del cliente son: ");
+            System.out.println("Nombre: "+nombre+"\n"+
+                "apellido: "+apellidos+"\n"+
+                "edad: "+edad+"\n"+
+                "cedula: "+cedula+"\n"+
+                "fecha: "+fecha+"\n"+
+                "dir: "+direccion+"\n"+
+                "tel: "+tele+"\n");
+    }   
 }
 

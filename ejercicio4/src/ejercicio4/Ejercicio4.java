@@ -20,14 +20,14 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         double seguimiento, parcial1, parcial2, definitiva;
         System.out.println("digite la nota de seguimiento :");
-        Scanner lectorseguimiento=new Scanner(System.in);
-        seguimiento = lectorseguimiento.nextInt();
+        Scanner lector=new Scanner(System.in);
+        seguimiento = lector.nextInt();
         System.out.println("digite la nota del parcial1:");
-        Scanner lectorparcial1=new Scanner(System.in);
-        parcial1 = lectorparcial1.nextInt();
+        
+        parcial1 = lector.nextInt();
         System.out.println("digite la nota del parcial2:");
-        Scanner lectorparcial2=new Scanner(System.in);
-        parcial2 = lectorparcial2.nextInt();
+        
+        parcial2 = lector.nextInt();
         definitiva=(seguimiento*0.5)+(parcial1*0.25)+(parcial2*0.25);
         System.out.println("la nota definitiva es: " + definitiva);
         // TODO code application logic here

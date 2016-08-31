@@ -19,13 +19,13 @@ public class Ejercicio1 {
      */
     public static void main(String[] args) {
         double lado,area,volumen;
-        System.out.println("digite el lado:");
+        System.out.println("digite el lado del cubo:");
         Scanner lector=new Scanner(System.in);
         lado = lector.nextInt();
         area=lado*lado*6;
         volumen=lado*lado*lado;
-        System.out.println("el area es: " + area);
-        System.out.println("el volumen es: " + volumen);
+        System.out.println("el area del cubo es: " + area);
+        System.out.println("el volumen del cubo es: " + volumen);
         // TODO code application logic here
     }
     

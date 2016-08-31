@@ -22,11 +22,11 @@ public class Ejercicio11 {
         long factorial=1;
         int x,i;
         System.out.println(" digite el numero");
-        Scanner lectornumero=new Scanner(System.in);
-        numero = lectornumero.nextInt();
+        Scanner lector=new Scanner(System.in);
+        numero = lector.nextInt();
            for (i=1;i<=numero;i++){
                factorial = factorial * i;
-               System.out.println("el factorial de: " + i + "es: " + factorial);
+               System.out.println("el factorial de: " + i + " es : " + factorial);
            } 
     }
     

@@ -18,9 +18,9 @@ public class Ejercicio6 {
      */
     public static void main(String[] args) {
         int codigo;
-        System.out.println("digite codigo de producto :");
-        Scanner lectorcodigo=new Scanner(System.in);
-        codigo = lectorcodigo.nextInt();
+        System.out.println("digite codigo de producto : 1 , 2, 3 o 4");
+        Scanner lector=new Scanner(System.in);
+        codigo = lector.nextInt();
         switch(codigo){
             case 1: 
                 System.out.println("el precio es : $500");

@@ -18,14 +18,14 @@ public class Ejercicio12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        long factorial=1;
-        double def,cont=0,acum=0;
-        int x,i,n1,n2,n3,n4,n,notas;
+        double def,cont=0,n1,n2,n3,n4,acum=0;
+        
+        int x,i,n,notas;
         System.out.println(" digite el numero");
         Scanner lector=new Scanner(System.in);
         n = lector.nextInt();
-        int[] definitiva = new int[n];
-           for (i=1;i<=n;i++){
+        double[] definitiva = new double[n];
+           for (i=0;i<n;i++){
              System.out.println(" digite la nota 1");
              n1=lector.nextInt();
              System.out.println(" digite la nota 2");
@@ -36,7 +36,7 @@ public class Ejercicio12 {
              n4=lector.nextInt();
              //notas=lector.nextInt();
              def=(n1*0.25)+(n2*0.3)+(n3*0.2)+(n4*0.25);
-             definitiva[i]=n1;
+             definitiva[i]=def;
              acum=acum+def;
              if(def>=3){
             
@@ -46,7 +46,7 @@ public class Ejercicio12 {
              }
            } 
            System.out.println(" las notas son:");
-    for (i=1;i<=n;i++){
+    for (i=0;i<n;i++){
       System.out.println(definitiva[i] + " ");
     }
     System.out.println(" el promedio acumulado es: " + acum/n);

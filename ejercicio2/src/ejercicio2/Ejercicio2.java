@@ -20,11 +20,10 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         double a, b, hipotenusa;
         System.out.println("digite el lado a:");
-        Scanner lectora=new Scanner(System.in);
-        a = lectora.nextInt();
+        Scanner lector=new Scanner(System.in);
+        a = lector.nextInt();
         System.out.println("digite el lado b:");
-        Scanner lectorb=new Scanner(System.in);
-        b = lectorb.nextInt();
+        b = lector.nextInt();
         hipotenusa=sqrt((a*a)+(b*b));
         System.out.println("la hipotenusa es: " + hipotenusa);
         // TODO code application logic here

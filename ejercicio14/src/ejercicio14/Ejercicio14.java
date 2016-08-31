@@ -26,6 +26,7 @@ public class Ejercicio14 {
             System.out.println("2. triangulo ");
             System.out.println("3. cuadrado ");
             System.out.println("4. rectangulo");
+            System.out.println("5. salir");
             System.out.println(" elija una opcion ");
             Scanner lector=new Scanner(System.in);
             opcion = lector.nextInt();
@@ -42,10 +43,13 @@ public class Ejercicio14 {
                 case 4:
                     figura1.rectangulo();
                     break;
+                case 5:
+                    System.out.println("adios");
+                    break;
                 default: 
                     System.out.println("elija una opcion correcta ");
             }
-        }while(opcion!=4);
+        }while(opcion!=5);
     }
     
 }

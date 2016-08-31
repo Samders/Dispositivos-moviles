@@ -19,20 +19,20 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         double seguimiento, practica, exposicion, definitiva, proyecto,proyectoI;
         System.out.println("digite la nota de seguimiento :");
-        Scanner lectorseguimiento=new Scanner(System.in);
-        seguimiento = lectorseguimiento.nextInt();
+        Scanner lector=new Scanner(System.in);
+        seguimiento = lector.nextInt();
         System.out.println("digite la nota del practica:");
-        Scanner lectorpractica=new Scanner(System.in);
-        practica = lectorpractica.nextInt();
+       
+        practica = lector.nextInt();
         System.out.println("digite la nota de la exposicion:");
-        Scanner lectorexposicion=new Scanner(System.in);
-        exposicion = lectorexposicion.nextInt();
+      
+        exposicion = lector.nextInt();
         System.out.println("digite la nota del proyecto:");
-        Scanner lectorproyecto=new Scanner(System.in);
-        proyecto = lectorproyecto.nextInt();
+        
+        proyecto = lector.nextInt();
         System.out.println("digite la nota del proyectoI:");
-        Scanner lectorproyectoI=new Scanner(System.in);
-        proyectoI = lectorproyectoI.nextInt();
+       
+        proyectoI = lector.nextInt();
         definitiva=(seguimiento*0.2)+(practica*0.3)+(exposicion*0.1)+(proyecto*0.15)+(proyectoI*0.25);
         if(definitiva<=1){
         System.out.println("Estas en el lugar equivocado");
